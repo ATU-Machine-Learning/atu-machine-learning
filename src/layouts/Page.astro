@@ -1,0 +1,19 @@
+---
+import { Head, Nav } from "@components";
+
+export interface PageProps {
+  title?: string;
+  description?: string;
+}
+
+const { title, description } = Astro.props as PageProps;
+---
+
+<Head title={title} description={description} />
+
+<!-- TODO: Container-styling on Body -->
+<body>
+  <Nav />
+  <slot />
+  <!-- TODO: Footer Component -->
+</body>

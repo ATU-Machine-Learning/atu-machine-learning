@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "astro-build.astro-vscode",
+    "EditorConfig.EditorConfig",
+    "rvest.vs-code-prettier-eslint",
+    "antfu.browse-lite",
+    "Gruntfuggly.todo-tree",
+    "vscode-icons-team.vscode-icons"
+  ],
+  "unwantedRecommendations": []
+}
