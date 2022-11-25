@@ -5,7 +5,7 @@
     "paths": {
       "@layouts/*": ["src/layouts/*.astro"],
       "@components": ["src/components/index.ts"],
-      "@globalcss": ["src/styles/global.css"]
+      "@globalcss": ["src/styles/global.scss"]
     }
   }
 }
