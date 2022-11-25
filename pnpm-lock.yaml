@@ -4,6 +4,7 @@ specifiers:
   '@typescript-eslint/eslint-plugin': ^5.0.0
   '@typescript-eslint/parser': ^5.44.0
   astro: ^1.6.10
+  astro-feather-icons: ^1.0.2
   eslint: ^8.0.1
   eslint-config-standard-with-typescript: ^23.0.0
   eslint-plugin-import: ^2.25.2
@@ -15,6 +16,7 @@ specifiers:
 
 dependencies:
   astro: 1.6.10_sass@1.56.1
+  astro-feather-icons: 1.0.2
 
 devDependencies:
   '@typescript-eslint/eslint-plugin': 5.44.0_fnsv2sbzcckq65bwfk7a5xwslu
@@ -901,6 +903,10 @@ packages:
     engines: {node: '>=4'}
     dependencies:
       tslib: 2.4.1
+    dev: false
+
+  /astro-feather-icons/1.0.2:
+    resolution: {integrity: sha512-3goz21oOAdMtISBRUvVvNY2V9WcOo67FH+US/G7BUfhLlmhVE8bBpNYRrc+v5dloGCQIzXlKryWNDZLapaHmlw==}
     dev: false
 
   /astro/1.6.10_sass@1.56.1:

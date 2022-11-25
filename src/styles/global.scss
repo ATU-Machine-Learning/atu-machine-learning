@@ -39,7 +39,7 @@ body {
 }
 
 nav {
-  background-color: var(--c-atu-green);
+  background-color: var(--c-atu-green-alt);
   border-bottom-left-radius: var(--b-radius);
   border-bottom-right-radius: var(--b-radius);
   box-shadow: var(--box-shadow);
@@ -95,30 +95,41 @@ img {
   }
 }
 
-/* Media Query for display sizes > 750px, allows nav content to flow properly */
-@media only screen and (min-width: 750px) {
+/* Media Query for display sizes, allows nav content to flow properly */
+@media only screen and (min-width: 800px) {
   nav {
     ul {
       display: flex;
       list-style-type: none;
       font-size: 1.15rem;
       font-weight: bold;
-      gap: 1em;
+      gap: 0.5em;
 
-      padding: 0 2em;
+      padding: 0.5em !important;
+      margin: 0 !important;
 
       li {
         a {
-          color: black;
+          display: flex;
+          color: var(--c-white);
           text-decoration: none;
-          padding: 0.5em 1.5em;
+          align-items: center;
+          justify-content: center;
+
+          /* Override the default styling for .btn components */
+          padding: 0 1em !important;
 
           &:is(:hover, :focus) {
-            color: black !important;
+            color: var(--c-black) !important;
             background-color: var(--c-atu-gold-alt);
             border-radius: var(--b-radius);
             box-shadow: var(--box-shadow);
             cursor: pointer;
+          }
+
+          .link-icon {
+            margin-top: 0.5em;
+            margin-right: 0.5em;
           }
         }
       }
