@@ -1,14 +1,26 @@
 ---
 import Page from "@layouts/Page";
 import type { PageProps } from "@layouts/Page";
+import Card, { CardProps } from "src/components/astro/Card.astro";
+import PeopleData from "../people.json";
 
 const props: PageProps = {
   title: "Who We Are",
   description:
     "The people involved with Arkansas Tech University's Machine Learning",
 };
+
+const people: CardProps[] = PeopleData.people;
 ---
 
 <Page title={props.title} description={props.description}>
-  <h1>Who We Are Placeholder</h1>
+  {
+    people.map((person) => (
+      <Card
+        image={person.image}
+        links={person.links}
+        details={person.details}
+      />
+    ))
+  }
 </Page>

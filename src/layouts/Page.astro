@@ -11,9 +11,10 @@ const { title, description } = Astro.props as PageProps;
 
 <Head title={title} description={description} />
 
-<!-- TODO: Container-styling on Body -->
 <body>
   <Nav />
-  <slot />
-  <!-- TODO: Footer Component -->
+  <main>
+    <slot />
+    <!-- TODO: Footer Component -->
+  </main>
 </body>

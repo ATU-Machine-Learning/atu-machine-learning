@@ -1,0 +1,46 @@
+{
+  "people": [
+    {
+      "image": {
+        "url": "https://avatars.githubusercontent.com/u/8367008"
+      },
+      "links": {
+        "github": "https://github.com/ghoshr",
+        "linkedin": "https://www.linkedin.com/in/robin-ghosh-1421ab56",
+        "email": "mailto:rghosh@atu.edu"
+      },
+      "details": {
+        "name": "Dr. Robin Ghosh",
+        "status": "Assistant Professor"
+      }
+    },
+    {
+      "image": {
+        "url": "https://avatars.githubusercontent.com/u/42104095"
+      },
+      "links": {
+        "github": "https://github.com/clayjens",
+        "linkedin": "",
+        "email": "mailto:cjensen@atu.edu"
+      },
+      "details": {
+        "name": "Clayton Jensen",
+        "status": "Computer Science"
+      }
+    },
+    {
+      "image": {
+        "url": "https://avatars.githubusercontent.com/u/83320498"
+      },
+      "links": {
+        "github": "https://github.com/SijanPanday",
+        "linkedin": "",
+        "email": "mailto:spanday@atu.edu"
+      },
+      "details": {
+        "name": "Sijan Panday",
+        "status": "Computer Science"
+      }
+    }
+  ]
+}

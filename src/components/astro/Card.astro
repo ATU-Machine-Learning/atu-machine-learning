@@ -1,0 +1,41 @@
+---
+import { GitHub, Linkedin, Mail } from "astro-feather-icons";
+
+export interface CardProps {
+  image: {
+    url: string;
+    alt?: string;
+  };
+  links: {
+    github: string;
+    linkedin: string;
+    email: string;
+  };
+  details: {
+    name: string;
+    status: string;
+  };
+}
+
+const { image, links, details } = Astro.props as CardProps;
+---
+
+<div class="card">
+  <div class="img-container">
+    <img src={image.url} alt={image.alt} />
+  </div>
+
+  <div class="content">
+    <div class="details">
+      <div class="links">
+        <ul>
+          <li><a href={links.github}><GitHub /></a></li>
+          <li><a href={links.linkedin}><Linkedin /></a></li>
+          <li><a href={links.email}><Mail /></a></li>
+        </ul>
+      </div>
+      <div class="name">{details.name}</div>
+      <div class="status">{details.status}</div>
+    </div>
+  </div>
+</div>
