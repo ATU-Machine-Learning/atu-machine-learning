@@ -14,13 +14,34 @@ const people: CardProps[] = PeopleData.people;
 ---
 
 <Page title={props.title} description={props.description}>
-  {
-    people.map((person) => (
-      <Card
-        image={person.image}
-        links={person.links}
-        details={person.details}
-      />
-    ))
-  }
+  <div class="container">
+    <div class="card-container">
+      {
+        people.map((person, index) => (
+          <Card
+            key={index}
+            image={person.image}
+            links={person.links}
+            details={person.details}
+          />
+        ))
+      }
+    </div>
+  </div>
 </Page>
+
+<style lang="scss">
+  .container {
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+  }
+
+  .card-container {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+</style>

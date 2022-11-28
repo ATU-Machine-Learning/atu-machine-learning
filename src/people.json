@@ -16,16 +16,72 @@
     },
     {
       "image": {
-        "url": "https://avatars.githubusercontent.com/u/42104095"
+        "url": "https://navadheep.github.io/d195be9c-2bcf-4c22-9822-1606ed74c58c.jpg"
       },
       "links": {
-        "github": "https://github.com/clayjens",
-        "linkedin": "",
-        "email": "mailto:cjensen@atu.edu"
+        "github": "",
+        "linkedin": "https://www.linkedin.com/in/katta-sriram-479610103/",
+        "email": ""
       },
       "details": {
-        "name": "Clayton Jensen",
-        "status": "Computer Science"
+        "name": "Katta Sriram",
+        "status": "Graduate, Information Technology"
+      }
+    },
+    {
+      "image": {
+        "url": "https://navadheep.github.io/6d37e810-cfe9-4765-8ece-9d095ec0c534.jpg"
+      },
+      "links": {
+        "github": "",
+        "linkedin": "https://www.linkedin.com/in/navadheep-chowdhary-a18890231/",
+        "email": ""
+      },
+      "details": {
+        "name": "Navadheep Chowdhary",
+        "status": "Master's, Information Technology"
+      }
+    },
+    {
+      "image": {
+        "url": "https://navadheep.github.io/1589963950107.jpg"
+      },
+      "links": {
+        "github": "",
+        "linkedin": "https://www.linkedin.com/in/sathvik-prasad/",
+        "email": ""
+      },
+      "details": {
+        "name": "Sathvik Prasad",
+        "status": "Master's, Information Technology"
+      }
+    },
+    {
+      "image": {
+        "url": "https://navadheep.github.io/1642524711061.jpg"
+      },
+      "links": {
+        "github": "",
+        "linkedin": "https://www.linkedin.com/in/sucharitha-reddy-605096127/",
+        "email": ""
+      },
+      "details": {
+        "name": "Sucharitha Reddy",
+        "status": "MS, Information Technology"
+      }
+    },
+    {
+      "image": {
+        "url": "https://avatars.githubusercontent.com/u/62253612"
+      },
+      "links": {
+        "github": "https://github.com/ZSabakh",
+        "linkedin": "https://www.linkedin.com/in/zurab-sabakhtarishvili-33b2731b4/",
+        "email": "mailto:zsabakhtarishvili@atu.edu"
+      },
+      "details": {
+        "name": "Zurab Sabakhtarishvili",
+        "status": "BAS, Computer Science"
       }
     },
     {
@@ -39,7 +95,21 @@
       },
       "details": {
         "name": "Sijan Panday",
-        "status": "Computer Science"
+        "status": "BAS, Computer Science"
+      }
+    },
+    {
+      "image": {
+        "url": "https://avatars.githubusercontent.com/u/42104095"
+      },
+      "links": {
+        "github": "https://github.com/clayjens",
+        "linkedin": "",
+        "email": "mailto:cjensen@atu.edu"
+      },
+      "details": {
+        "name": "Clayton Jensen",
+        "status": "BAS, Computer Science"
       }
     }
   ]

@@ -1,6 +1,8 @@
 ---
 import { GitHub, Linkedin, Mail } from "astro-feather-icons";
 
+import NoProfilePic from "../../images/no-pfp.jpeg";
+
 export interface CardProps {
   image: {
     url: string;
@@ -22,20 +24,113 @@ const { image, links, details } = Astro.props as CardProps;
 
 <div class="card">
   <div class="img-container">
-    <img src={image.url} alt={image.alt} />
+    <!-- Conditionally render the profile picture, use placeholder if none available -->
+    {
+      image.url ? (
+        <img src={image.url} alt={image.alt} />
+      ) : (
+        <img src={NoProfilePic} alt="No Profile Picture Available" />
+      )
+    }
   </div>
 
   <div class="content">
+    <div class="links">
+      <ul>
+        <li><a href={links.github}><GitHub size={20} /></a></li>
+        <li><a href={links.linkedin}><Linkedin size={20} /></a></li>
+        <li><a href={links.email}><Mail size={20} /></a></li>
+      </ul>
+    </div>
     <div class="details">
-      <div class="links">
-        <ul>
-          <li><a href={links.github}><GitHub /></a></li>
-          <li><a href={links.linkedin}><Linkedin /></a></li>
-          <li><a href={links.email}><Mail /></a></li>
-        </ul>
-      </div>
       <div class="name">{details.name}</div>
       <div class="status">{details.status}</div>
     </div>
   </div>
 </div>
+
+<style lang="scss">
+  .card {
+    width: 12em;
+    height: 12em;
+
+    background-color: var(--c-atu-green-alt);
+    color: var(--c-white);
+    border-radius: var(--b-radius);
+    box-shadow: var(--box-shadow);
+
+    position: relative;
+    margin: 1em;
+
+    transition: all 0.2s ease;
+
+    &:hover {
+      transform: scale(102%);
+    }
+
+    .img-container {
+      width: 8em;
+      height: 8em;
+      border-radius: var(--b-radius-full);
+      box-shadow: var(--box-shadow);
+      overflow: hidden;
+      border: 2px solid var(--c-atu-gold-alt);
+      position: absolute;
+      left: 50%;
+      top: -10%;
+      transform: translateX(-50%);
+
+      img {
+        position: inherit;
+        top: 0;
+        left: 0;
+      }
+    }
+
+    .content {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      padding-bottom: 1em;
+
+      .links {
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        top: 60%;
+
+        ul {
+          padding: 0;
+          margin: 0;
+          list-style-type: none;
+          display: flex;
+          justify-content: space-between;
+
+          li {
+            a {
+              color: var(--c-white);
+              &:is(:hover, :focus) {
+                color: var(--c-atu-gold-alt);
+              }
+            }
+          }
+        }
+      }
+
+      .details {
+        text-align: center;
+
+        .name {
+          font-size: 1rem;
+        }
+
+        .status {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+</style>
